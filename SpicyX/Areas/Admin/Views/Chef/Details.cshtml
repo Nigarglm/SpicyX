@@ -1,0 +1,20 @@
+﻿
+@model List<Chef>
+
+    @foreach (Chef chefs in Model)
+{
+  <div class="card" style="width: 18rem;">
+    <img src="~/admin/assets/img/chef/@chefs.Photo" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">NAME: @chefs.Name</h5>
+    <p class="card-text">POSITION: @chefs.Position</p>
+           <div class="mu-single-chef-social">
+               <a href="https://www.facebook.com/?locale=az_AZ"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.google.com/gmail/about/"><i class="fa fa-google-plus"></i></a>
+               <a href="https://az.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+           </div>
+  </div>
+</div>  
+}
+
